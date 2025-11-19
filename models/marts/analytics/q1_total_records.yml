@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: q1_total_records
+    description: "Total number of transaction records in the shopping behavior dataset after data staging."
+    columns:
+      - name: total_records
+        description: "Count of total rows in the dataset."
+        tests:
+          - not_null
+          - greater_than:
+              value: 0
