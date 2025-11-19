@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: q2_unique_customers
+    description: "Total number of unique customers based on distinct Customer IDs."
+    columns:
+      - name: unique_customers
+        description: "Distinct count of customers in the dataset."
+        tests:
+          - not_null
+ 

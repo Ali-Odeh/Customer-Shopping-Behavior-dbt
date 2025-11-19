@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: customer_shopping
+    description: "Raw dataset loaded from Kaggle containing customer shopping behavior."
+    database: SHOPPING_DATA
+    schema: RAW_CSB
+    tables:
+      - name: SHOPPING_BEHAVIOR_UPDATED
+        description: "Raw shopping behavior data after manual clean column naming."
