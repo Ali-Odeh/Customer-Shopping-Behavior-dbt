@@ -22,7 +22,13 @@ clean-targets:
 
 models:
   customer_shopping_behavior:
-  
+    +materialized: table         
 
+    staging:                    
+      +materialized: table     
+
+    marts:                     
+      analytics:
+        +materialized: table    
 
  

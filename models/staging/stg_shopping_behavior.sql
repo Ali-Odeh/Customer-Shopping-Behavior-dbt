@@ -1,5 +1,4 @@
-{{ config(materialized='table') }}
-
+ 
 select
     customer_id,
     age,
@@ -19,5 +18,5 @@ select
     previous_purchases,
     payment_method,
     frequency_of_purchases,
-    {{ age_group('age') }} as age_group  -- هنا نستخدم الماكرو
+    {{ age_group('age') }} as age_group  
 from {{ source('customer_shopping', 'SHOPPING_BEHAVIOR_UPDATED') }}
