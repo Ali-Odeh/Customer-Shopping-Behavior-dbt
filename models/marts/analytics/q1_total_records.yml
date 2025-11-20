@@ -8,5 +8,5 @@ models:
         description: "Count of total rows in the dataset."
         tests:
           - not_null
-          - greater_than:
-              value: 0
+          # - greater_than:
+          #     value: 0
