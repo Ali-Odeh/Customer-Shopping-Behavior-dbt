@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: q4_purchases_by_age_group
+    description: "Number of purchases per age group, sorted from highest to lowest."
+    columns:
+      - name: age_group
+        description: "Bucketed age group (<20, 20-40, 40-60, >60, Unknown)."
+        tests:
+          - not_null
+
+      - name: total_purchases
+        description: "Total number of purchases for each age group."
+        tests:
+          - not_null
