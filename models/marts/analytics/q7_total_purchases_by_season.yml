@@ -1,0 +1,23 @@
+version: 2
+
+models:
+  - name: q7_total_purchases_by_season
+    description: "Total number of purchases and total revenue for each season, sorted by highest revenue."
+    columns:
+      - name: season
+        description: "Shopping season (e.g., Winter, Summer, Fall, Spring)."
+        tests:
+          - not_null
+          - unique
+          - accepted_values:
+              values: ['Winter', 'Summer', 'Spring', 'Fall']
+
+      - name: total_purchases
+        description: "Total number of purchases per season."
+        tests:
+          - not_null
+
+      - name: total_revenue
+        description: "Sum of purchase amounts per season."
+        tests:
+          - not_null
