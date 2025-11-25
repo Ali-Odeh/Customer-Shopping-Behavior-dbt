@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: q5_unique_customers_by_location
+    description: "The location with the highest number of unique customers."
+    columns:
+      - name: location
+        description: "The location with the most distinct customers."
+        tests:
+          - not_null
+
+      - name: unique_customers
+        description: "Number of distinct customers at that location."
+        tests:
+          - not_null

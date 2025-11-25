@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: q6_avg_purchase_by_category
+    description: "Average purchase amount grouped by product category."
+    columns:
+      - name: category
+        description: "Product category."
+        tests:
+          - not_null
+          - unique
+
+      - name: avg_purchase_amount
+        description: "Average purchase price for each category, rounded to 2 decimals."
+        tests:
+          - not_null
