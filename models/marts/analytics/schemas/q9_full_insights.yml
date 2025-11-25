@@ -1,0 +1,65 @@
+version: 2
+
+models:
+  - name: q9_full_insights
+    description: "Aggregated insights by Age Group, Gender, Category, and Season, including spending metrics and customer preferences"
+    
+    columns:
+      - name: age_group
+        description: "Customer age group (<20, 20–40, 40–60, >60)"
+        tests:
+          - not_null
+           
+
+      - name: gender
+        description: "Customer gender (Male/Female)"
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['Male', 'Female']
+
+      - name: category
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['Clothing', 'Accessories', 'Footwear', 'Outerwear']
+
+      - name: season
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['Spring', 'Summer', 'Fall', 'Winter']
+
+      - name: number_of_purchases
+        description: "Total number of transactions in this segment"
+        tests:
+          - not_null
+        
+
+      - name: total_purchase_amount
+        description: "Total revenue in USD from this segment"
+        tests:
+          - not_null
+        
+
+      - name: average_purchase_amount
+        description: "Average transaction value in USD"
+        tests:
+          - not_null
+
+
+      - name: most_frequent_item
+        tests:
+          - not_null
+
+      - name: most_common_size
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['XS', 'S', 'M', 'L', 'XL', 'XXL']
+
+      - name: most_common_color
+        tests:
+          - not_null
+
+    
