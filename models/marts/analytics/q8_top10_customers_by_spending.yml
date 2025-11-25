@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: q8_top10_customers_by_spending
+    description: "Top 10 customers with the highest total spending."
+    columns:
+      - name: customer_id
+        description: "Unique identifier of the customer."
+        tests:
+          - not_null
+
+      - name: total_spending
+        description: "Total spending amount aggregated per customer."
+        tests:
+          - not_null
