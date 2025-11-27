@@ -3,7 +3,10 @@
 ## 📌 Overview
 This project builds a complete analytics pipeline using **dbt (Data Build Tool)** on top of **Snowflake** to analyze customer shopping behavior data. The dataset contains transactional shopping records, including demographics, purchase details, preferences, and seasonal buying patterns.
 
+
 The goal is to transform raw data into meaningful insights to answer nine business questions, covering customer segmentation, spending behavior, product trends, and revenue analysis.
+The objective of this project is to turn raw transactional data into validated, cleaned, and analysis-ready models, enabling insights.
+
 
 ## 📂 Dataset
 The project uses the **Customer Shopping Behavior Dataset** from Kaggle:
