@@ -29,9 +29,8 @@ The project follows a standard dbt structure:
 ## 🚀 Setup Instructions
 
 ### Prerequisites
-1.  **Python** installed.
-2.  **dbt-snowflake** adapter installed (`pip install dbt-snowflake`).
-3.  A **Snowflake** account.
+1.  **dbt-snowflake** adapter installed (`pip install dbt-snowflake`).
+2.  A **Snowflake** account.
 
 ### Installation
 1.  Clone the repository:
